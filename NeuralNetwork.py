@@ -21,8 +21,6 @@ class NeuralNetwork():
         if not randomise:
             return
         weight_vec.randomise()
-        print(weight_vec.content[0])
-        print(weight_vec.content[1])
         return weight_vec;
     def FeedForward(self, inp, expected, method = "Sigmoid"):
         if method == "Sigmoid":
@@ -39,9 +37,10 @@ class NeuralNetwork():
 # a = NeuralNetwork(2,1,1);
 # b = vec.vec(2)
 # b.set(0,2);
-# b.set(1,222);
-# a.FeedForward(b,4)
-#
+# b.set(1,3);
+# print(a.FeedForward(b,1))
+
+
 
 
         
