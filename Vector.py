@@ -1,4 +1,5 @@
 #Vectors naturally have dimensions N x 1
+import random;
 class vec:
     #Construct vector with n rows
     def __init__(self,n):
@@ -35,7 +36,15 @@ class vec:
             print("Error, index out of range")
             return
         self.content[x] = val;
-        
+    
+    def randomise(self, start = 0, end = 1, float_ = True):
+        for i in range(0, len(self.content)):
+            if float_:
+                self.content[i] = random.uniform(start, end)
+            else:
+                self.content[i] = random.randint(start, end)
+            
+ 
 
         
 
